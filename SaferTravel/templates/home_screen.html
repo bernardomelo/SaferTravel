@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block body %}
+    <h1>Welcome, dear introvert traveller!</h1>
+    <a>Coronavirus pandemic locked almost eh entire planet in their homes with its quick spread rate, but some areas of work do not stop <br>
+        functioning, for example, medical, basic items transporting, item shipment... They need safe routes to operate.<br></a>
+    <br>
+    <a>We use the USAir2010 database for our application. Using Djikstra's shortest path algorithm, we can show you the best route possible <br>to avoid social contact from point A to point B.<br></a>
+    <br>
+    <a>Currently mapped number of nodes: 1858</a>
+
+    <div style="height: 100%;">
+        <h2>Navigation:</h2>
+        <h3>Just input the code of the airport you are FROM and TO.</h3>
+        <form action="/" method="POST">
+            <input type="text" name="contentFrom" id="contentfrom" placeholder="From ">
+            <input type="text" name="contentTo" id="contentto" placeholder="To ">
+            <input type="submit" value="NAVIGATE!">
+        </form>
+    </div>
+{% endblock %}
